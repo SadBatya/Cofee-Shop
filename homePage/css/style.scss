@@ -1,0 +1,51 @@
+:root{
+  --background-color: #19161B;
+  --color-text__white: #FFFFFF;
+  --color-text__black:#2E2D33;
+  --color-text__gray: #B8B8B8;
+  --color-text__gray2:#C4E4EA;
+  --color-site__buttons: #FFC492;
+}
+
+
+body{
+  width: 1600px;
+  background-color: var(--background-color);
+}
+
+.wrapper{
+  max-width: 1278px;
+  margin: 0 auto;
+}
+
+
+header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 30px;
+  font-family: 'Poppins';
+  nav{
+    ul{
+      display: flex;
+      flex-direction: row;
+      li{
+        padding-right: 50px;
+        a{
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 24px;
+          text-transform: capitalize;
+          color: var(--color-text__white);
+        }
+      }
+    }
+  }
+  .header__text{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: capitalize;
+    color: var(--color-site__buttons);
+  }
+}
