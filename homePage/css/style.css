@@ -1,3 +1,4 @@
+@charset "UTF-8";
 :root {
   --background-color: #19161B;
   --color-text__white: #FFFFFF;
@@ -7,6 +8,8 @@
   --color-site__buttons: #FFC492;
   --color-text__brown: #FFB577;
   --color-text__blue:#C4E4EA;
+  --background-cards: rgba(0, 0, 0, 0.16);
+  --background-cards-menu:#1F1D21;
 }
 
 body {
@@ -60,6 +63,31 @@ body {
   line-height: 175%;
   color: var(--color-text__gray);
   margin-top: 16px;
+}
+
+.header__element {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-family: "Playfair Display";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--color-text__brown);
+}
+
+.border {
+  display: block;
+  content: "";
+  background: url(../icons/Line.svg);
+  width: 48px;
+  height: 1px;
+  margin-left: 16px;
+}
+
+.mod__fz {
+  font-size: 48px;
+  margin-top: 24px;
 }
 
 header {
@@ -169,24 +197,6 @@ main .know__more .know__more-info {
   width: 635px;
   margin-right: 109px;
 }
-main .know__more .know__more-info .know__more-header {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  font-family: "Playfair Display";
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 150%;
-  color: var(--color-text__brown);
-}
-main .know__more .know__more-info .border {
-  display: block;
-  content: "";
-  background: url(../icons/Line.svg);
-  width: 48px;
-  height: 1px;
-  margin-left: 16px;
-}
 main .know__more .know__more-info .know__more-text .subtitle {
   width: 630px;
   padding-top: 32px;
@@ -222,6 +232,209 @@ main .know__more .know__more-info .features .feature .feature__header .feature__
   line-height: 36px;
   color: var(--color-text__blue);
 }
+main .know__more .know__more-info .button {
+  margin-top: 32px;
+}
+main .know__more .feature__img {
+  display: flex;
+  flex-direction: row;
+}
+main .know__more .feature__img img {
+  width: 240px;
+  height: 500px;
+}
 main .know__more .feature__img :first-child {
-  padding-right: 67px;
+  margin-top: 81px;
+  margin-right: 67px;
+}
+
+.serving {
+  margin-top: 160px;
+}
+.serving .serving__header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.serving .serving__header .title {
+  width: 660px;
+  margin-right: 58px;
+}
+.serving .serving__header .mod__width {
+  width: 549px;
+}
+.serving .serving__cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 65px;
+  background-color: var(--background-cards);
+}
+.serving .serving__cards .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 298px;
+  height: 216px;
+  margin: 64px 64px 128px 64px;
+}
+.serving .serving__cards .card .card__icon-1 {
+  display: block;
+  content: "";
+  background: url(../icons/IconTort.svg);
+  width: 48px;
+  height: 48px;
+}
+.serving .serving__cards .card .card__icon-2 {
+  display: block;
+  content: "";
+  background: url(../icons/iconCola.svg);
+  width: 48px;
+  height: 48px;
+}
+.serving .serving__cards .card .card__icon-3 {
+  display: block;
+  content: "";
+  background: url(../icons/IconBurger.svg);
+  width: 48px;
+  height: 48px;
+}
+.serving .serving__cards .card .card__icon-4 {
+  display: block;
+  content: "";
+  background: url(../icons/IconDrink.svg);
+  width: 48px;
+  height: 48px;
+}
+.serving .serving__cards .card .card__icon-5 {
+  display: block;
+  content: "";
+  background: url(../icons/IconMeet.svg);
+  width: 48px;
+  height: 48px;
+}
+.serving .serving__cards .card .card__icon-6 {
+  display: block;
+  content: "";
+  background: url(../icons/IconMacaroni.svg);
+  width: 48px;
+  height: 48px;
+}
+.serving .serving__cards .card .card__title {
+  font-family: "Playfair Display";
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 150%;
+  color: var(--color-text__white);
+  margin-top: 24px;
+}
+.serving .serving__cards .card .subtitle {
+  margin-top: 12px;
+}
+
+.menu .menu__header {
+  display: flex;
+  flex-direction: row;
+}
+.menu .menu__header .menu__title .title {
+  width: 450px;
+  margin-right: 268px;
+}
+.menu .menu__header .menu__title .subtext {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 150%;
+  color: var(--color-text__blue);
+  margin-top: 32px;
+}
+.menu .menu__header .menu__title .mod__width {
+  width: 499px;
+}
+.menu .menu__cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 31px;
+  margin-top: 83px;
+}
+.menu .menu__cards .menu__card {
+  width: 405px;
+  height: 351px;
+  background-color: var(--background-cards-menu);
+}
+.menu .menu__cards .menu__card .card__name {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-family: "Playfair Display";
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 150%;
+  color: var(--color-text__white);
+  opacity: 0.87;
+  padding: 24px 32px 24px 32px;
+}
+.menu .menu__cards .menu__card .card__name :last-child {
+  font-family: "Poppins";
+}
+.menu .button {
+  margin: auto;
+  margin-top: 40px;
+}
+
+.quote {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: var(--background-cards-menu);
+}
+.quote .quote__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 436px;
+  border-bottom: 1px solid var(--color-text__gray);
+  margin-left: 159px;
+  margin-bottom: 84px;
+}
+.quote .quote__info .symbol {
+  display: block;
+  content: "";
+  background: url(..//icons/“.svg);
+  width: 27px;
+  height: 21px;
+  margin-top: 80px;
+  margin-bottom: 43px;
+}
+.quote .quote__info .text {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 150%;
+  color: var(--color-text__gray);
+}
+.quote .quote__info .profile {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 72px;
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--color-text__white);
+  padding-bottom: 22px;
+}
+.quote .quote__info .profile .name {
+  opacity: 0.87;
+}
+.quote .quote__info .profile .surname {
+  opacity: 0.6;
+}
+.quote video {
+  flex: 1;
 }/*# sourceMappingURL=style.css.map */
