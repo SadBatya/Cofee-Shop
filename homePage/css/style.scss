@@ -343,6 +343,7 @@ main{
 }
 
 .menu{
+  margin-bottom: 165px;
   .menu__header{
     display: flex;
     flex-direction: row;
@@ -453,3 +454,68 @@ main{
     flex: 1;
   }
 }
+
+.blog{
+  margin-bottom: 160px;
+  .menu__title{}
+  .blog__cards{
+    margin-top: 64px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 31px;
+    .blog__card{
+      width: 405px;
+      height: 526px;
+      background-color: var(--background-cards-menu);
+      .blog__info{
+        padding: 32px;
+        .card__date{
+          font-family: 'Poppins';
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 171%;
+          color: var(--color-text__gray)
+        }
+        .card__title{
+          font-family: 'Playfair Display';
+          font-weight: 700;
+          font-size: 32px;
+          line-height: 150%;
+          color: var(--color-text__white);
+          opacity: 0.87;
+        }
+      }
+      img{
+        background-size: 100%;
+        background-position: top center;
+      }
+    }
+  }
+}
+
+.contact{
+  display: flex;
+  flex-direction: row;
+  margin-top: 165px;
+  .contact__info{
+    background-color: var(--background-cards-menu);
+    width: 441px;
+    height: 532px;
+    padding-left: 64px;
+    padding-top: 80px;
+    h4{
+      font-family: 'Playfair Display';
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 150%;
+      color: var(--color-text__white);
+      padding-top: 32px;
+      &:first-child{
+        padding-top: 0px;
+      }
+    }
+  }
+}
+
+
