@@ -90,6 +90,14 @@ body {
   margin-top: 24px;
 }
 
+.logo {
+  display: block;
+  content: "";
+  background: url(../icons/Logo.svg);
+  width: 96px;
+  height: 20px;
+}
+
 header {
   display: flex;
   flex-direction: row;
@@ -104,13 +112,6 @@ header nav ul {
 }
 header nav ul li {
   padding-right: 50px;
-}
-header nav ul li .logo {
-  display: block;
-  content: "";
-  background: url(../icons/Logo.svg);
-  width: 96px;
-  height: 20px;
 }
 header nav ul li a {
   font-weight: 500;
@@ -502,4 +503,60 @@ main .know__more .feature__img :first-child {
 }
 .contact .contact__info h4:first-child {
   padding-top: 0px;
+}
+
+footer .logo {
+  margin: 0 auto;
+  margin-bottom: 44px;
+}
+footer nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 60px;
+  gap: 40px;
+}
+footer nav ul li a {
+  font-family: "Poppins";
+  font-size: 16px;
+  color: var(--color-text__white);
+  text-decoration: none;
+}
+footer .socials {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 28px;
+}
+footer .socials .footer__text {
+  color: var(--color-text__gray);
+  font-size: 16px;
+  font-family: Poppins;
+  line-height: 24px;
+  text-transform: capitalize;
+}
+footer .socials .footer__icons {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  padding-right: 150px;
+}
+footer .socials .footer__btn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 9px;
+}
+footer .socials .footer__btn span {
+  font-family: "Poppins";
+  font-size: 16px;
+  color: var(--color-text__white);
+  line-height: 24px;
+}
+footer .socials .footer__btn .arrow {
+  display: block;
+  content: "";
+  background: url(../icons/Arrow__orange.svg);
+  width: 21px;
+  height: 9px;
 }/*# sourceMappingURL=style.css.map */
