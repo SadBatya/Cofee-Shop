@@ -327,9 +327,6 @@ header .header__btn .arrow {
     border: 0;
   }
 }
-.filter__cards .menu__cards .opacity__white {
-  opacity: 1;
-}
 
 .contact {
   display: flex;
